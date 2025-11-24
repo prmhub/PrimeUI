@@ -1,4 +1,6 @@
---====================================================--
+from pathlib import Path
+
+prime_full_script = r"""--====================================================--
 --                    PRIME UI LIBRARY
 --             Simple Hybrid Version (Stable)
 --====================================================--
@@ -119,3 +121,9 @@ local PRIME_API = {
 }
 
 return PRIME_API
+"""
+
+path = Path("/mnt/data/prime_source.lua")
+path.write_text(prime_full_script, encoding="utf-8")
+
+"/mnt/data/prime_source.lua"
